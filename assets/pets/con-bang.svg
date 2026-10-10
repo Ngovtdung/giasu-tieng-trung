@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512">
+  <title>Côn Bằng 鲲鹏</title>
+  <defs>
+    <radialGradient id="cb-aura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8fe8ff" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#4fa6e0" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#2a5fb0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cb-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2f6e"/>
+      <stop offset="0.45" stop-color="#2a6aa8"/>
+      <stop offset="1" stop-color="#4cbcc9"/>
+    </linearGradient>
+    <linearGradient id="cb-belly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9fbf6"/>
+      <stop offset="1" stop-color="#bfe9e2"/>
+    </linearGradient>
+    <linearGradient id="cb-feather" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a6aa8"/>
+      <stop offset="0.55" stop-color="#5fd0d8"/>
+      <stop offset="0.85" stop-color="#bff4ec"/>
+      <stop offset="1" stop-color="#f6d27a"/>
+    </linearGradient>
+    <linearGradient id="cb-feather-far" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a2a62"/>
+      <stop offset="0.6" stop-color="#2f7fb0"/>
+      <stop offset="1" stop-color="#d9b25e"/>
+    </linearGradient>
+    <radialGradient id="cb-iris" cx="0.45" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#fff2b8"/>
+      <stop offset="0.6" stop-color="#f2c055"/>
+      <stop offset="1" stop-color="#c47a1e"/>
+    </radialGradient>
+    <linearGradient id="cb-cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3e2b4"/>
+    </linearGradient>
+    <linearGradient id="cb-drop" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7fe3ee"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="cb-ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8433b"/>
+      <stop offset="0.7" stop-color="#ef7a55"/>
+      <stop offset="1" stop-color="#f6c66a" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="cb-ribbon2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8624f"/>
+      <stop offset="1" stop-color="#f6d27a" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="cb-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cb-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <path id="cb-body-shape" d="M90 262 C88 214 136 176 204 174 C268 172 318 192 356 212 C378 222 392 214 404 198 C412 190 424 196 424 206 C424 222 410 240 392 254 C350 296 298 330 236 338 C176 346 118 328 100 300 C93 290 90 276 90 262 Z"/>
+    <clipPath id="cb-body-clip"><use xlink:href="#cb-body-shape"/></clipPath>
+
+    <!-- Feather-fin pointing +x: Kun's fins and tail are feathers, hinting at its Peng (bird) form. -->
+    <path id="cb-leaf" d="M0 0 C18 -24 70 -32 118 -14 C126 -11 128 -3 121 0 C82 14 26 16 0 0 Z"/>
+    <path id="cb-vein" d="M8 0 C42 -8 82 -12 114 -6"/>
+    <path id="cb-spiral" d="M0 0 a3 3 0 0 1 6 0 a6 6 0 0 1 -12 0 a9 9 0 0 1 18 0"/>
+    <path id="cb-spark" d="M0 -8 Q1 -1 8 0 Q1 1 0 8 Q-1 1 -8 0 Q-1 -1 0 -8 Z"/>
+    <path id="cb-drop-shape" d="M0 0 C-6 -10 -6 -20 0 -26 C6 -20 6 -10 0 0 Z"/>
+
+    <g id="cb-feather-near">
+      <use xlink:href="#cb-leaf" fill="url(#cb-feather)" stroke="#172554" stroke-width="3" stroke-linejoin="round"/>
+      <use xlink:href="#cb-vein" fill="none" stroke="#f6d27a" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
+    </g>
+    <g id="cb-feather-back">
+      <use xlink:href="#cb-leaf" fill="url(#cb-feather-far)" stroke="#172554" stroke-width="3" stroke-linejoin="round"/>
+      <use xlink:href="#cb-vein" fill="none" stroke="#e8c070" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- Tường vân (祥云) auspicious cloud, ~140x56 -->
+    <g id="cb-cloud-shape">
+      <path d="M12 52 C0 50 2 30 16 29 C16 11 44 6 52 22 C58 0 98 0 101 22 C114 12 138 24 129 41 C141 44 141 56 128 56 L18 56 C14 56 11 55 12 52 Z"
+            fill="url(#cb-cloud)" stroke="#c9963a" stroke-width="2.5" stroke-linejoin="round"/>
+      <use xlink:href="#cb-spiral" transform="translate(72 30)" fill="none" stroke="#c9963a" stroke-width="2.2" stroke-linecap="round"/>
+      <use xlink:href="#cb-spiral" transform="translate(30 40) scale(0.7)" fill="none" stroke="#c9963a" stroke-width="3" stroke-linecap="round"/>
+      <use xlink:href="#cb-spiral" transform="translate(112 42) scale(0.55) rotate(180)" fill="none" stroke="#c9963a" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Linh quang (aura) + trận văn (array ring) -->
+  <g id="aura">
+    <circle cx="262" cy="256" r="246" fill="url(#cb-aura)"/>
+    <circle cx="262" cy="256" r="212" fill="none" stroke="#f2c96a" stroke-width="1.5" stroke-opacity="0.35"/>
+    <circle cx="262" cy="256" r="200" fill="none" stroke="#f2c96a" stroke-width="2" stroke-opacity="0.35" stroke-dasharray="2 9" stroke-linecap="round"/>
+  </g>
+
+  <g id="clouds-back">
+    <use xlink:href="#cb-cloud-shape" transform="translate(366 300)" opacity="0.95"/>
+    <use xlink:href="#cb-cloud-shape" transform="translate(26 112) scale(0.7)" opacity="0.9"/>
+  </g>
+
+  <!-- Far-side wing-fin, behind the body -->
+  <g id="fin-far">
+    <use xlink:href="#cb-feather-back" transform="translate(286 200) rotate(-18) scale(0.9 -0.9)"/>
+    <use xlink:href="#cb-feather-back" transform="translate(280 200) rotate(-36) scale(1 -1)"/>
+    <use xlink:href="#cb-feather-back" transform="translate(274 202) rotate(-54) scale(0.9 -0.9)"/>
+    <use xlink:href="#cb-feather-back" transform="translate(268 204) rotate(-72) scale(0.72 -0.72)"/>
+  </g>
+
+  <g id="body">
+    <use xlink:href="#cb-body-shape" fill="url(#cb-body)"/>
+    <g clip-path="url(#cb-body-clip)">
+      <path d="M80 266 C140 296 270 312 420 228 L440 430 L60 430 Z" fill="url(#cb-belly)"/>
+      <g fill="none" stroke="#7fbfc0" stroke-width="2" stroke-linecap="round" opacity="0.7">
+        <path d="M112 292 C160 314 270 322 380 268"/>
+        <path d="M128 308 C172 324 262 332 356 292"/>
+        <path d="M150 322 C188 334 250 338 320 314"/>
+      </g>
+      <!-- rim light along the back -->
+      <path d="M112 214 C150 186 236 176 300 188 C330 194 356 206 380 216" fill="none" stroke="#a8f2ff" stroke-width="5" stroke-linecap="round" opacity="0.55" filter="url(#cb-soft)"/>
+      <!-- gold cloud-scroll markings on the back -->
+      <g fill="none" stroke="#f2c96a" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
+        <use xlink:href="#cb-spiral" transform="translate(246 200) rotate(4)"/>
+        <use xlink:href="#cb-spiral" transform="translate(296 210) rotate(14) scale(0.8)"/>
+        <use xlink:href="#cb-spiral" transform="translate(338 226) rotate(24) scale(0.62)"/>
+      </g>
+    </g>
+    <!-- luminous spirit spots along the flank -->
+    <g fill="#d6fff8" filter="url(#cb-glow)">
+      <circle cx="226" cy="258" r="5.5"/>
+      <circle cx="264" cy="262" r="5"/>
+      <circle cx="300" cy="258" r="4.5"/>
+      <circle cx="332" cy="248" r="4"/>
+      <circle cx="360" cy="234" r="3.5"/>
+      <circle cx="382" cy="220" r="3"/>
+    </g>
+    <use xlink:href="#cb-body-shape" fill="none" stroke="#172554" stroke-width="3.5" stroke-linejoin="round"/>
+  </g>
+
+  <g id="tail-ribbon">
+    <path d="M398.6 233.1 L399.4 237.8 L400.6 242.4 L402.2 246.7 L404.1 250.8 L406.3 254.6 L408.7 258.1 L411.2 261.4 L413.9 264.5 L416.6 267.3 L419.4 270.0 L422.2 272.6 L425.0 275.0 L427.7 277.3 L430.3 279.6 L432.7 281.8 L435.0 284.1 L437.0 286.3 L438.9 288.7 L440.4 291.1 L441.7 293.6 L442.7 296.3 L443.3 299.2 L443.6 302.3 L443.4 305.8 L443.1 309.5 L443.1 313.3 L443.3 316.8 L443.8 320.3 L444.5 323.6 L445.4 326.9 L446.5 330.0 L447.7 333.0 L449.0 335.9 L450.4 338.8 L451.9 341.6 L453.4 344.4 L454.9 347.1 L456.4 349.8 L457.9 352.5 L459.2 355.2 L460.5 358.0 L461.7 360.8 L462.7 363.6 L463.5 366.6 L464.1 369.7 L464.5 372.9 L464.7 376.2 L464.5 379.9 L467.5 380.1 L468.0 376.4 L468.2 372.8 L468.1 369.2 L467.7 365.8 L467.2 362.5 L466.3 359.2 L465.3 356.1 L464.2 353.0 L462.9 350.1 L461.5 347.2 L460.1 344.4 L458.6 341.6 L457.1 338.9 L455.6 336.1 L454.2 333.4 L452.9 330.7 L451.7 327.9 L450.6 325.1 L449.7 322.3 L448.9 319.3 L448.4 316.3 L448.2 313.1 L448.2 309.8 L448.6 306.2 L449.0 302.4 L448.9 298.6 L448.5 295.0 L447.7 291.6 L446.5 288.2 L445.1 285.0 L443.4 281.9 L441.5 278.9 L439.4 276.0 L437.2 273.1 L434.9 270.3 L432.5 267.5 L430.1 264.8 L427.7 262.0 L425.3 259.3 L423.0 256.6 L420.8 253.8 L418.7 250.9 L416.7 248.0 L414.8 245.0 L413.2 241.9 L411.7 238.5 L410.4 234.9 L409.4 230.9 Z" fill="url(#cb-ribbon2)" stroke="#8a1f1a" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M405.5 232.0 L409.4 235.2 L413.5 238.1 L417.7 240.5 L421.9 242.6 L426.1 244.2 L430.2 245.6 L434.3 246.6 L438.3 247.4 L442.1 248.0 L445.8 248.4 L449.4 248.6 L452.8 248.9 L456.1 249.1 L459.2 249.3 L462.1 249.6 L464.9 250.0 L467.6 250.6 L470.1 251.4 L472.5 252.5 L474.8 253.8 L477.0 255.6 L479.1 257.7 L481.0 260.4 L482.8 263.6 L484.3 266.7 L485.4 269.8 L486.1 272.8 L486.6 275.7 L486.7 278.6 L486.7 281.4 L486.5 284.2 L486.1 286.9 L485.7 289.7 L485.1 292.6 L484.6 295.4 L484.1 298.3 L483.6 301.3 L483.3 304.3 L483.1 307.4 L483.1 310.6 L483.3 313.8 L483.9 317.0 L484.7 320.3 L485.9 323.7 L487.4 327.0 L489.3 330.4 L491.7 333.8 L494.4 337.2 L497.6 334.8 L495.3 331.3 L493.6 328.0 L492.3 324.8 L491.3 321.8 L490.7 318.9 L490.4 316.1 L490.3 313.3 L490.4 310.6 L490.6 307.9 L491.0 305.2 L491.4 302.5 L491.9 299.7 L492.4 296.8 L492.9 293.9 L493.4 290.9 L493.7 287.9 L494.0 284.7 L494.0 281.5 L493.9 278.2 L493.6 274.8 L493.0 271.4 L492.0 267.8 L490.8 264.2 L489.2 260.4 L487.3 256.6 L485.2 253.2 L482.9 250.1 L480.4 247.3 L477.7 244.9 L474.8 242.8 L471.7 240.9 L468.6 239.3 L465.3 237.9 L462.0 236.7 L458.6 235.6 L455.2 234.6 L451.8 233.8 L448.4 232.9 L445.0 232.1 L441.6 231.3 L438.2 230.4 L434.9 229.5 L431.6 228.4 L428.3 227.3 L424.9 225.9 L421.6 224.3 L418.1 222.4 L414.5 220.0 Z" fill="url(#cb-ribbon)" stroke="#8a1f1a" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Feather fan tail, drawn over the stalk so the feathers grow out of the gold cuff -->
+  <g id="tail">
+    <use xlink:href="#cb-feather-near" transform="translate(412 210) rotate(-14) scale(0.78 -0.78)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(408 210) rotate(-128) scale(0.8)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(412 210) rotate(-40) scale(0.95 -0.95)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(408 210) rotate(-102) scale(0.95)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(410 210) rotate(-70) scale(0.62)"/>
+    <ellipse cx="410" cy="214" rx="15" ry="10" transform="rotate(-40 410 214)" fill="#f2c55c" stroke="#172554" stroke-width="3"/>
+    <path d="M400 216 C406 222 414 222 420 212" fill="none" stroke="#b8741f" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g id="head">
+    <path d="M92 272 C118 290 150 296 180 290 C186 289 190 284 188 279" fill="none" stroke="#172554" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="184" cy="270" rx="10" ry="6" fill="#ff9db4" opacity="0.8"/>
+    <!-- eye -->
+    <circle cx="156" cy="238" r="16" fill="#121a3a"/>
+    <circle cx="156" cy="239" r="11.5" fill="url(#cb-iris)"/>
+    <ellipse cx="157" cy="240" rx="4.5" ry="8" fill="#121a3a"/>
+    <circle cx="151" cy="232" r="4.2" fill="#ffffff"/>
+    <circle cx="161" cy="246" r="2" fill="#ffffff"/>
+    <path d="M136 228 C144 214 166 212 176 224" fill="none" stroke="#172554" stroke-width="3" stroke-linecap="round"/>
+    <!-- tiên ấn: cinnabar forehead sigil -->
+    <g transform="translate(176 198) rotate(-12)">
+      <path d="M0 -14 C7 -6 8 2 0 10 C-8 2 -7 -6 0 -14 Z" fill="#e2483d" stroke="#8a1f1a" stroke-width="1.5"/>
+      <path d="M0 -6 C3 -2 3 2 0 5 C-3 2 -3 -2 0 -6 Z" fill="#ffd77a"/>
+    </g>
+  </g>
+
+  <!-- Near wing-fin -->
+  <g id="fin-near">
+    <use xlink:href="#cb-feather-near" transform="translate(236 314) rotate(30) scale(1.0)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(232 314) rotate(47) scale(0.98)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(228 316) rotate(64) scale(0.88)"/>
+    <use xlink:href="#cb-feather-near" transform="translate(224 318) rotate(81) scale(0.72)"/>
+  </g>
+
+  <!-- spout of spirit mist -->
+  <g id="spout" filter="url(#cb-glow)" stroke="#2a6aa8" stroke-width="1.5">
+    <use xlink:href="#cb-drop-shape" transform="translate(212 168) rotate(-38)" fill="url(#cb-drop)"/>
+    <use xlink:href="#cb-drop-shape" transform="translate(214 166) rotate(-6) scale(1.25)" fill="url(#cb-drop)"/>
+    <use xlink:href="#cb-drop-shape" transform="translate(218 168) rotate(26)" fill="url(#cb-drop)"/>
+  </g>
+
+  <g id="clouds-front">
+    <use xlink:href="#cb-cloud-shape" transform="translate(36 372) scale(1.25)"/>
+  </g>
+
+  <g id="sparkles" filter="url(#cb-glow)">
+    <use xlink:href="#cb-spark" transform="translate(70 214)" fill="#f6d27a"/>
+    <use xlink:href="#cb-spark" transform="translate(452 76) scale(0.8)" fill="#c8fbff"/>
+    <use xlink:href="#cb-spark" transform="translate(474 262) scale(0.6)" fill="#f6d27a"/>
+    <use xlink:href="#cb-spark" transform="translate(150 96) scale(0.55)" fill="#c8fbff"/>
+    <use xlink:href="#cb-spark" transform="translate(360 450) scale(0.7)" fill="#f6d27a"/>
+    <use xlink:href="#cb-spark" transform="translate(250 120) scale(0.45)" fill="#f6d27a"/>
+  </g>
+</svg>
